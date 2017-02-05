@@ -1,0 +1,99 @@
+.landingPageText {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 20pt;
+	font-style: normal;
+	font-weight: lighter;
+	font-variant: normal;
+	color: #008852;
+	text-align: center;
+	line-height:130%;
+}
+
+.questionPageTitle {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 35pt;
+	font-style: normal;
+	font-weight: lighter;
+	font-variant: normal;
+	color: #ffffff;
+	text-align: center;
+	line-height:130%;
+}
+
+.questionPageQuestionText {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 35pt;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	letter-spacing:.5pt;
+	color: #ffffff;
+	text-align: center;
+	line-height:130%;
+	text-shadow: 2px 2px grey;
+}
+
+.questionAnswer {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 17pt;
+	font-style: normal;
+	font-weight: lighter;
+	font-variant: normal;
+	letter-spacing:.5pt;
+	color: #000000;
+	line-height:130%;
+	width: 770px;
+}
+
+.problemExplanation{
+	font-size:15pt;
+	color: #008852;
+}
+
+.scoreOutputPercentage{
+	font-size:30pt;
+	font-weight: bold;
+	color: #008852;
+}
+
+.ui-selectmanycheckbox label, .ui-selectoneradio label {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:16pt;
+	font-style: normal;
+	font-weight: lighter;
+	letter-spacing:.5pt;
+	color: #000000;
+	padding:15px;
+	margin-top:0px;
+}
+
+#banner {
+	display: none;
+}
+
+#ja-belt {
+	display: none;
+}
+
+#newsletter {
+	display: none;
+}
+
+#footer {
+	display: none;
+}
+
+#content {
+	background-color: #282828;
+}
+
+#main-content {
+	min-width: 1200px;
+	max-width:1200px;
+	margin: 0px 0 0 0;
+	padding: 0px 0 0 0;
+}
+
+#wrapper {
+    width: 1200px;	
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+      
+	
+
+
+<f:view
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+>
+	<h:head>
+	    <h:outputStylesheet name="../css/main.css"  />
+	    
+	    <style>
+	        .speechBubbleText {
+                font-family: "Helvetica Neue", Helvetica, Arial, Tacoma;
+	            font-size: 14pt;
+	            color: #008751;
+	            text-align: center;
+	        }
+	        #main-content {
+	            box-shadow:none;
+	        }
+	    
+	    </style>
+	    
+	    
+	   <h:outputScript name="../javascript/honda_scripting.js" />
+	   <h:outputScript name="http://html5shiv.googlecode.com/svn/trunk/html5.js" />
+	    
+	</h:head>
+	<h:body bgcolor="#ffffff">
+
+<h:form>
+		
+<table style="width:1200px;height:1000px;" width="1200px" height="1000px" cellpadding="0" cellspacing="0">
+   <tr bgcolor="#8dc63f">
+      <td align="center">
+      <a href="http://www.juniorachievement.org/web/programs" target="_blank">
+        <h:graphicImage value="../images/Financial-Test-Drive-Landing_Learn_More.jpg" width="190" height="44" alt="Learn More about JA Programs" />
+      </a>
+      </td>
+      <td><h:graphicImage value="../images/Financial-Test-Drive-Landing_Top_Center.jpg" width="460" height="70" /></td>
+      <td align="center"><a href="http://www.hondafinancialservices.com" target="_blank"><h:graphicImage value="../images/Financial-Test-Drive-Landing_Explore_Careers.jpg" width="247" height="44" alt="Learn More about Honda Financial Services" /></a></td>
+   </tr>
+   <tr>
+      <td rowspan="5" width="363" height="930" style="background-image:url('/junior-achievement-honda-quiz-portlet/images/left-landing-page.jpg');background-repeat: no-repeat;">
+         <div style="float:left; max-width:350px; height:550px; margin-top:-200px;">
+             <div style="padding-top:50px;padding-left:10px;width:350px;height:320px;">
+               <div class="speechBubble" style="padding-top:40px;padding-left:5px;height:350px;text-align:center; background-image:url('/junior-achievement-honda-quiz-portlet/images/blank_speech_bubble_right_reduced.png');background-repeat: no-repeat;">
+                 <span class="speechBubbleText" style="text-align:center;">
+                      Check out <strong>Investin U</strong>, a credit<br/> education game developed by<br /> <a href="http://www.hondafinancialservices.com" target="_blank"><strong>Honda Financial Services</strong></a>.<br /><br />
+                      <a href="http://bit.ly/1n2cRkh" target="_blank"><h:graphicImage value="../images/app_apple.png" /></a><a href="http://bit.ly/1wMC960" target="_blank"><h:graphicImage value="../images/app_android.png" /></a><br /><br />
+                      For more information go to<br /> <a href="http://investinu.com/" target="_blank"><strong>http://investinu.com</strong></a>
+                 </span>
+               </div>
+              </div>
+             <div style="float:right;text-align:center;width:250px;margin-top:10px;padding:0px 20 20 20; z-index:999"><h:graphicImage value="../images/honda_couple.png" styleClass="hondaImage" /></div>
+         </div>
+      </td>
+      <td><h:graphicImage value="../images/Financial-Test-Drive-Landing_Financial_Test_Drive.jpg" width="460" height="272" /></td>
+      <td rowspan="5"><h:graphicImage value="../images/Financial-Test-Drive-Landing_Right.jpg" width="377" height="930" /></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>      
+	  <td class="landingPageText" width="460px" height="258px"><span class="landingPageText">You may have a driver's license, but are you ready for our Financial Test Drive?<br />
+<br />
+Take our Financial Test Drive to learn if you are ready to hit the road of responsible vehicle ownership.</span></td>
+   </tr>
+   <tr>      
+      <td align="center">
+      <h:commandButton action="#{hondaQuizPageBean.startQuiz}" image="../images/Financial-Test-Drive-Landing_Start.jpg" width="211" height="67" /></td>
+   </tr>
+   <tr>      
+      <td><h:graphicImage value="../images/Financial-Test-Drive-Landing_Bottom_Center.jpg" width="460" height="333" alt="Honda Financial Services" /></td>
+   </tr>
+</table>
+		
+		
+</h:form>
+
+	</h:body>
+</f:view>

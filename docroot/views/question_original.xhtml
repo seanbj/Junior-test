@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+
+<f:view
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+>
+	<h:head />
+	<h:body bgcolor="#ffffff">
+		
+<h:form>		
+		
+<table style="width:1200px;height:1000px;background-image:url('/junior-achievement-honda-quiz-portlet/images/Financial-Test-Drive-question_background.png');background-repeat: no-repeat;" width="1200px" height="970" cellpadding="0" cellspacing="0">
+	      <tr>
+            <td colspan="5" height="17" width="1200"></td>
+          </tr>   
+          <tr>
+            <td rowspan="7" width="30" height="983"></td>
+            <td width="354" height="46" align="right">
+            <a href="http://www.juniorachievement.org/web/programs" target="_blank">
+                  <h:graphicImage value="../images/Financial-Test-Drive-Landing_Learn_More.jpg" style="padding-right:45px;" />
+            </a>
+            </td>
+            <td width="479" height="46"></td>
+            <td width="365" height="46" align="left"><a href="http://www.investinu.com" target="_blank"><h:graphicImage value="../images/Financial-Test-Drive-Landing_Explore_Careers.jpg" style="padding-left:25px"/></a></td>
+            <td rowspan="7" height="983" width="27" ></td>
+          </tr>
+          <tr>
+            <td width="354" height="136"></td>
+            <td width="479" height="136" align="center"><span class="questionPageTitle">Financial Test Drive</span><br /><span class="questionPageQuestionText">Question ##{hondaQuizPageBean.currentProblemInt+1}</span></td>
+            <td width="365" height="136"></td>
+          </tr>
+          <tr>
+            <td colspan="3" height="87"></td>
+          </tr>       
+		  <tr>
+            <td colspan="3" height="400" style="padding:40px;" valign="top">
+            <!--  Question area image -->
+            <div style="float:right;"><h:graphicImage value="../images/question_images/#{hondaQuizPageBean.currentProblemImage}" align="right" width="226px" height="226px"/></div>
+            <div class="questionAnswer" style="float:left;clear:left;width:825px">
+	            <div style="float:left;clear:left;margin-bottom: 15px;">
+
+	            <!--  Question.  Limit to 770 px wide -->
+	            <h:outputText value="#{hondaQuizPageBean.currentProblemQuestion}" escape="false" />
+	            </div>
+	            
+	            <div style="float:left;clear:left;">
+		            <!-- Answers -->
+	               
+					<p:selectOneRadio value="#{hondaQuizPageBean.currentlySelectedAnswer}" layout="pageDirection" required="true" requiredMessage="Please select an answer" disabled="#{hondaQuizPageBean.answerDisplayed}">
+		                <f:selectItems value="#{hondaQuizPageBean.currentAnswerArray}" var="c" itemLabel="&lt;strong&gt;#{c.indexValue}&lt;/strong&gt; #{c.answer}" itemValue="#{c.value}" />
+		                <p:ajax listener="#{hondaQuizPageBean.answerAction}" update="@all" process="@form" />
+		            </p:selectOneRadio>
+	            </div>
+            
+            </div>
+            </td>
+          </tr>    
+          <tr>
+            <td width="354" height="116"></td>
+            <td colspan="2" width="479" height="116" valign="top"><div style="width:600px; margin-top:-20px;"><h:outputText value="#{hondaQuizPageBean.currentProblemAnswerText}" escape="false" /></div></td>
+          </tr>  
+          <tr>
+            <td width="354" height="70"></td>
+            <td colspan="2" width="479" height="70" align="right" valign="top"><h:commandButton action="#{hondaQuizPageBean.nextQuestion}" update="display" image="../images/next_banner_button.png" rendered="#{hondaQuizPageBean.answerDisplayed}" /></td>
+          </tr>    
+          <tr>
+            <td colspan="3" width="1143" height="48"></td>
+          </tr>        
+		</table>
+</h:form>		
+		
+	</h:body>
+</f:view>
